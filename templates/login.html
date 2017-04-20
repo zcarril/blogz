@@ -7,17 +7,24 @@
             <td><label for="username">Username</label></td>
             <td>
                 <input name="username" type="text" value="{{ username }}">
+
             </td>
         </tr>
         <tr>
             <td><label for="password">Password</label></td>
             <td>
-                <input name="password" type="password">
+                <input name="password" type="password" value={{ password }}>
+                <span class="error">{{ error }}</span>
+
             </td>
         </tr>
-
+        <tr>
+          <td colspan="2">    <input type="submit"></td>
+        </tr>
+        <tr>
+          New to the blog? <a href="/signup">Create an Account</a>
+        </tr>
     </table>
-    <input type="submit">
 </form>
 
 {% endblock %}
